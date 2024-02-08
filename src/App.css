@@ -1,0 +1,13 @@
+.cont::after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100svh;
+    /* background: url('./assets/image/photoshop-stars-effect-s.jpg'); */
+    background: url('./assets/image/clouds-2085112_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    inset: 0;
+    z-index: -10;
+}
