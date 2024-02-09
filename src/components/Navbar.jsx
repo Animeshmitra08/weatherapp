@@ -1,10 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaBars, FaSearch } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [search, setSearch] = useState([]);
+
+  useEffect(() => {
+    const searchData=()=>{
+      
+    };
+    searchData();
+  }, [])
+  
+  
 
   return (
     <header className="bg-transparent backdrop-blur-sm fixed w-full">
