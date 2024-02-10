@@ -40,10 +40,10 @@ const Hero = () => {
   return (
     <>
       {(typeof data.main != 'undefined') ? (
-        <div className="container mx-auto w-full h-[100svh] cont pt-[80px] px-2 pb-2 grid grid-cols-5">
+        <div className="container mx-auto w-full h-[100svh] overflow-auto cont pt-[80px] px-2 pb-2 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-center">
             <Temperature weatherData={data}/>
+            <Wind_details windData={data}/>            
             <Forecast/>
-            <Wind_details windData={data}/>
         </div> 
       ): (
         <div></div>
