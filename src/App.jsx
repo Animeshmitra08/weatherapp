@@ -1,10 +1,10 @@
 import './App.css';
 
 import Navbar from './components/Navbar';
-import Landing from './Pages/landing';
 import { Route, Routes } from 'react-router-dom';
 import Locations from './Pages/Locations';
 import About from './Pages/About';
+import Hero from './Pages/Hero';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
     <>
     <Navbar/>
       <Routes>
-        <Route path="/" element={<Landing/>}/>
+        <Route path="/" element={<Hero/>}/>
         <Route path="/locations" element={<Locations/>}/>
         <Route path="/about" element={<About/>}/>
       </Routes>
