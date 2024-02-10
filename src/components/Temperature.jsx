@@ -16,7 +16,7 @@ const Temperature = ({weatherData}) => {
   let set_time = set_militime.toLocaleTimeString();
   return (
     <>
-        <div className="w-full bg-slate-300 h-60 rounded-xl p-4 shadow-xl flex gap-2 col-span-5 justify-evenly items-end">
+        <div className="w-full bg-slate-300 sm:h-60 rounded-xl p-4 shadow-xl flex gap-2 col-span-5 justify-evenly items-center sm:items-end flex-col sm:flex-row">
             <div className="flex flex-col justify-center md:gap-0 gap-3">
               <p className="font-semibold md:text-xl">Temperature:</p>
               <div className="flex">       
