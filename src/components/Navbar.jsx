@@ -23,7 +23,7 @@ export default function Navbar() {
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Weather App</span>
             {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
-            <span>Weather App</span>
+            <span className="font-semibold text-xl">Climalive</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -67,7 +67,7 @@ export default function Navbar() {
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
               /> */}
-              <span>Weather App</span>
+              <span className="font-medium text-xl">Climalive</span>
             </a>
             <button
               type="button"
