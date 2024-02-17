@@ -16,8 +16,8 @@ const Temperature = ({weatherData}) => {
   let set_time = set_militime.toLocaleTimeString();
   return (
     <>
-        <div className="sm:w-full bg-slate-300 sm:h-60 rounded-xl p-4 shadow-xl flex gap-2 sm:col-span-5 justify-evenly items-center sm:items-end flex-col sm:flex-row">
-            <div className="flex flex-col justify-center md:gap-0 gap-3">
+        <div className="sm:w-full bg-slate-300 sm:h-60 rounded-xl p-4 shadow-xl flex gap-2 sm:col-span-5 justify-evenly sm:items-end flex-col sm:flex-row">
+            <div className="flex flex-col justify-center items-center md:gap-0 gap-3">
               <p className="font-semibold md:text-xl">Temperature:</p>
               <div className="flex">       
                 <div className="md:text-9xl text-8xl">
@@ -33,6 +33,7 @@ const Temperature = ({weatherData}) => {
 
             <div className="flex flex-col gap-2 lg:text-xl">              
               <p>Feels Like : {weatherData.main.feels_like.toFixed()}&deg;C</p>
+              <p>Max/Min : {weatherData.main.temp_max.toFixed()}&deg;C/{weatherData.main.temp_min.toFixed()}&deg;C</p>
               <p>Humidity : {weatherData.main.humidity}%</p>
               <p>Pressure : {weatherData.main.pressure}hPa</p>
             </div>
