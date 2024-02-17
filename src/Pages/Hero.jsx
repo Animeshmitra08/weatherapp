@@ -46,7 +46,9 @@ const Hero = () => {
             <Forecast/>
         </div> 
       ): (
-        <div></div>
+        <div className="cont">
+          No Data
+        </div>
       )}              
     </>
   )

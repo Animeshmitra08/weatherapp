@@ -43,7 +43,7 @@ const Temperature = ({weatherData}) => {
             </div>
             <div className="lg:text-xl">
               <p>Sunrise : {rise_time}</p>
-              <p>Sunrise : {set_time}</p>
+              <p>Sunset : {set_time}</p>
             </div>
             <div className="flex flex-col items-center lg:text-2xl">
               <p className="font-medium">{day}</p> 
